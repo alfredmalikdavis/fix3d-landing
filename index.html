@@ -61,13 +61,9 @@ fbq('track', 'PageView');
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--border);
   }
-  header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px}
+  header .wrap{display:flex;align-items:center;justify-content:center;padding-top:16px;padding-bottom:16px}
   .logo{font-family:'Archivo Black',sans-serif;font-size:22px;letter-spacing:-0.02em}
   .logo span{color:var(--yellow)}
-  .header-cta{
-    background:var(--yellow);color:#0a0a0a;font-weight:700;font-size:14px;
-    padding:10px 18px;border-radius:6px;text-decoration:none;white-space:nowrap;
-  }
 
   /* Hero */
   .hero{
@@ -156,12 +152,7 @@ fbq('track', 'PageView');
     background:var(--card);border:1px solid var(--border);border-radius:12px;
     padding:24px;
   }
-  .service-card .icon{
-    width:40px;height:40px;border-radius:8px;background:var(--yellow-dim);
-    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
-    color:var(--yellow);font-weight:800;font-size:18px;
-  }
-  .service-card h3{font-size:17px;margin-bottom:6px}
+  .service-card h3{font-size:17px;margin-bottom:6px;color:var(--yellow)}
   .service-card p{font-size:14px;color:var(--text-faint)}
 
   /* How it works */
@@ -191,7 +182,7 @@ fbq('track', 'PageView');
   .cta-band h2{
     font-family:'Archivo Black',sans-serif;
     font-size:clamp(1.6rem,4.5vw,2.4rem);
-    max-width:680px;margin:0 auto 30px;line-height:1.25;
+    max-width:680px;margin:0 auto;line-height:1.25;
   }
   .cta-band h2 .accent{color:var(--yellow)}
 
@@ -226,7 +217,6 @@ fbq('track', 'PageView');
 
   @media (max-width:640px){
     section{padding:48px 0}
-    .header-cta{padding:9px 14px;font-size:13px}
   }
 </style>
 </head>
@@ -235,7 +225,6 @@ fbq('track', 'PageView');
 <header>
   <div class="wrap">
     <div class="logo">FIX<span>3D</span></div>
-    <a href="#contact" class="header-cta">Message Us</a>
   </div>
 </header>
 
@@ -285,27 +274,22 @@ fbq('track', 'PageView');
     <p class="section-sub">Every machine type, from a single hobby printer to a full print farm.</p>
     <div class="services">
       <div class="service-card">
-        <div class="icon">B</div>
         <h3>Bambu Lab printers</h3>
         <p>X1, P1, A1 series diagnostics, repair &amp; calibration.</p>
       </div>
       <div class="service-card">
-        <div class="icon">F</div>
         <h3>FDM / filament printers</h3>
         <p>Extrusion, bed leveling, belts, electronics &amp; more.</p>
       </div>
       <div class="service-card">
-        <div class="icon">R</div>
         <h3>Resin printers</h3>
         <p>Exposure calibration, LCD/FEP issues, curing problems.</p>
       </div>
       <div class="service-card">
-        <div class="icon">L</div>
         <h3>Large-format &amp; specialty machines</h3>
         <p>Industrial &amp; oversized machines, on-site where needed.</p>
       </div>
       <div class="service-card">
-        <div class="icon">P</div>
         <h3>Print farms &amp; multi-printer setups</h3>
         <p>Fleet maintenance plans to keep every unit running.</p>
       </div>
@@ -343,7 +327,6 @@ fbq('track', 'PageView');
 
 <div class="cta-band">
   <h2 class="headline-font">Stop fighting with your printer. <span class="accent">Let us diagnose it, fix it, and get you back to printing.</span></h2>
-  <a href="#contact" class="btn-primary">Message Us to Schedule Service</a>
 </div>
 
 <section id="contact">
