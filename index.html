@@ -112,6 +112,10 @@ fbq('track', 'PageView');
     display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;
     margin-top:26px;font-size:13px;font-weight:600;color:var(--text-faint);
   }
+  .hero-art{
+    max-width:340px;margin:40px auto 0;
+  }
+  .hero-art svg{width:100%;height:auto;display:block}
 
   /* Trust strip: printer types */
   .type-strip{
@@ -247,6 +251,86 @@ fbq('track', 'PageView');
       <span>&#10003; Resin</span>
       <span>&#10003; Large-Format</span>
       <span>&#10003; Print Farms</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="210" cy="445" rx="110" ry="14" fill="#000" opacity="0.4"/>
+
+        <!-- legs -->
+        <rect x="158" y="380" width="26" height="44" rx="10" fill="#242424" stroke="#F5C518" stroke-width="2"/>
+        <ellipse cx="171" cy="428" rx="26" ry="11" fill="#111"/>
+        <rect x="236" y="380" width="26" height="44" rx="10" fill="#242424" stroke="#F5C518" stroke-width="2"/>
+        <ellipse cx="249" cy="428" rx="26" ry="11" fill="#111"/>
+
+        <!-- body / chassis -->
+        <rect x="115" y="170" width="190" height="215" rx="22" fill="#242424" stroke="#0a0a0a" stroke-width="9"/>
+        <rect x="125" y="184" width="170" height="14" rx="6" fill="#F5C518"/>
+
+        <!-- front window / face plate -->
+        <rect x="145" y="215" width="130" height="110" rx="16" fill="#0a0a0a"/>
+
+        <!-- eyes (angry) -->
+        <circle cx="185" cy="255" r="13" fill="#F2F2F0"/>
+        <circle cx="188" cy="257" r="6" fill="#0a0a0a"/>
+        <path d="M235 255 q14 10 28 0" stroke="#F2F2F0" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+        <!-- eyebrows -->
+        <line x1="170" y1="235" x2="196" y2="242" stroke="#F5C518" stroke-width="6" stroke-linecap="round"/>
+        <line x1="224" y1="238" x2="252" y2="232" stroke="#F5C518" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- gritted-teeth mouth -->
+        <path d="M178 290 l12 -10 l12 10 l12 -10 l12 10 l12 -10 l12 10" stroke="#F2F2F0" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- control buttons -->
+        <circle cx="175" cy="340" r="7" fill="#0a0a0a"/>
+        <circle cx="210" cy="340" r="7" fill="#0a0a0a"/>
+        <circle cx="245" cy="340" r="7" fill="#0a0a0a"/>
+
+        <!-- corner bolts -->
+        <circle cx="128" cy="200" r="5" fill="#242424" stroke="#F5C518" stroke-width="1.5" opacity="0.7"/>
+        <circle cx="292" cy="200" r="5" fill="#242424" stroke="#F5C518" stroke-width="1.5" opacity="0.7"/>
+        <circle cx="128" cy="370" r="5" fill="#242424" stroke="#F5C518" stroke-width="1.5" opacity="0.7"/>
+        <circle cx="292" cy="370" r="5" fill="#242424" stroke="#F5C518" stroke-width="1.5" opacity="0.7"/>
+
+        <!-- spool housing on top -->
+        <rect x="100" y="130" width="220" height="56" rx="14" fill="#333" stroke="#F5C518" stroke-width="2"/>
+        <path d="M100 130 A110 62 0 0 1 320 130 Z" fill="#F5C518" opacity="0.10" stroke="#F5C518" stroke-width="2" stroke-opacity="0.5"/>
+
+        <!-- resting filament rolls -->
+        <circle cx="145" cy="158" r="20" fill="#4CAF50" stroke="#0a0a0a" stroke-width="3"/>
+        <circle cx="145" cy="158" r="6" fill="#0a0a0a"/>
+        <circle cx="145" cy="158" r="13" fill="none" stroke="#000" stroke-width="2" opacity="0.25"/>
+        <circle cx="275" cy="158" r="20" fill="#EF4444" stroke="#0a0a0a" stroke-width="3"/>
+        <circle cx="275" cy="158" r="6" fill="#0a0a0a"/>
+        <circle cx="275" cy="158" r="13" fill="none" stroke="#000" stroke-width="2" opacity="0.25"/>
+
+        <!-- jammed strand from the yanked roll down into the housing -->
+        <path d="M205 112 C195 122, 220 128, 208 138 C200 145, 215 148, 210 140" stroke="#0a0a0a" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <path d="M205 112 C195 122, 220 128, 208 138 C200 145, 215 148, 210 140" stroke="#F2F2F0" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+        <!-- arms reaching up to the jammed roll -->
+        <path d="M150 205 Q115 160 180 100" stroke="#333" stroke-width="22" fill="none" stroke-linecap="round"/>
+        <path d="M270 205 Q305 160 240 100" stroke="#333" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+        <!-- the jammed roll, mid-yank -->
+        <g transform="rotate(-12 210 85)">
+          <circle cx="210" cy="85" r="30" fill="#F2F2F0" stroke="#0a0a0a" stroke-width="5"/>
+          <circle cx="210" cy="85" r="9" fill="#0a0a0a"/>
+          <circle cx="210" cy="85" r="19" fill="none" stroke="#0a0a0a" stroke-width="2" opacity="0.25"/>
+        </g>
+
+        <!-- hands gripping the roll -->
+        <circle cx="180" cy="98" r="16" fill="#F5C518" stroke="#0a0a0a" stroke-width="6"/>
+        <circle cx="240" cy="98" r="16" fill="#F5C518" stroke="#0a0a0a" stroke-width="6"/>
+
+        <!-- yank motion lines -->
+        <path d="M160 60 q-10 -6 -14 4" stroke="#F2F2F0" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round"/>
+        <path d="M262 58 q10 -6 14 4" stroke="#F2F2F0" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+        <!-- sweat drop -->
+        <path d="M118 175 Q128 189 118 199 Q108 189 118 175 Z" fill="#7EC8E3" stroke="#0a0a0a" stroke-width="3"/>
+      </svg>
     </div>
   </div>
 </section>
